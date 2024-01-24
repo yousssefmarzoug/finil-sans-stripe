@@ -8,24 +8,24 @@ const Product = ({ id, name, price, category }) => {
   return (
     <div className="col-sm-4 col-6">
       <div className="card card-product-grid">
-        <a href="" className="img-wrap">
-          {" "}
-          <img src={`images/items/${id}.jpg`} />{" "}
+        <a href="https://www.google.com/" className="img-wrap">
+          
+          <img src={`images/items/${id}.jpg`} alt="hhhh" />{" "}
         </a>
         <figcaption className="info-wrap">
           <ul className="rating-stars mb-1">
             <li style={{ width: "80%" }} className="stars-active">
-              <img src="images/icons/stars-active.svg" alt="" />
+              <img src="images/icons/stars-active.svg" alt="hhhh" />
             </li>
             <li>
-              <img src="images/icons/starts-disable.svg" alt="" />
+              <img src="images/icons/starts-disable.svg" alt="hhhh" />
             </li>
           </ul>
           <div>
-            <a href="#" className="text-muted">
+            <a href="https://www.google.com/" className="text-muted">
               {category}
             </a>
-            <a href="#" className="title">
+            <a href="https://www.google.com/" className="title">
               {name}
             </a>
           </div>

@@ -19,7 +19,7 @@ const App = () => {
   const { handleAuthentication } = useAuthentication(dispatch);
   useEffect(() => {
     handleAuthentication();
-  }, []);
+  }, [handleAuthentication]);
   return (
     <Layout>
       <Route exact path="/" component={Home} />

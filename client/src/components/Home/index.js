@@ -32,7 +32,7 @@ const Deals = () => (
         <div className="col-md col-6">
           <figure className="card-product-grid card-sm">
             <a href="https://www.google.com/" className="img-wrap">
-              <img src={process.env.PUBLIC_URL + "images/items/3.jpg"} />
+              <img src={process.env.PUBLIC_URL + "images/items/3.jpg"}  alt="hhhh"/>
             </a>
             <div className="text-wrap p-3">
               <a href="https://www.google.com/" className="title">
@@ -99,52 +99,7 @@ const Deals = () => (
   </section>
 );
 
-const Slider = () => (
-  <div
-    id="carousel1_indicator"
-    className="slider-home-banner carousel slide mt-3"
-    data-ride="carousel"
-  >
-    <ol className="carousel-indicators">
-      <li
-        data-target="#carousel1_indicator"
-        data-slide-to="0"
-        className="active"
-      ></li>
-      <li data-target="#carousel1_indicator" data-slide-to="1"></li>
-      <li data-target="#carousel1_indicator" data-slide-to="2"></li>
-    </ol>
-    <div className="carousel-inner">
-      <div className="carousel-item active">
-        <img src="images/banners/slide1.jpg" alt="First slide" />
-      </div>
-      <div className="carousel-item">
-        <img src="images/banners/slide2.jpg" alt="Second slide" />
-      </div>
-      <div className="carousel-item">
-        <img src="images/banners/slide3.jpg" alt="Third slide" />
-      </div>
-    </div>
-    <a
-      className="carousel-control-prev"
-      href="#carousel1_indicator"
-      role="button"
-      data-slide="prev"
-    >
-      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span className="sr-only">Previous</span>
-    </a>
-    <a
-      className="carousel-control-next"
-      href="#carousel1_indicator"
-      role="button"
-      data-slide="next"
-    >
-      <span className="carousel-control-next-icon" aria-hidden="true"></span>
-      <span className="sr-only">Next</span>
-    </a>
-  </div>
-);
+
 
 const Home = () => {
   return (

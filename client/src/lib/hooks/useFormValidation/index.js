@@ -21,7 +21,6 @@ export const useFormValidation = ({ formName, defaultValues = {} }) => {
     () => Object.values(errors[formName] ?? {}).some((error) => error),
     [errors, formName]
   );
-  React.useEffect(() => register(), [register]);
 
   const register = (values) => {
     const val = values ?? defaultValues;
@@ -32,6 +31,10 @@ export const useFormValidation = ({ formName, defaultValues = {} }) => {
       }));
     });
   };
+  React.useEffect(() => register(), [register]);
+
+  React.useEffect(() => register(), [register]);
+
   const validate = async (values) =>
     Object.entries(values).forEach(([key, value]) =>
       setErrors((prevState) => ({
@@ -49,7 +52,7 @@ export const useFormValidation = ({ formName, defaultValues = {} }) => {
       formValues,
       isValid: Boolean(!isValid && isDirty),
     };
-  }, [errors, formName, handleOnChange, isDirty, isValid, register, validate]);
+  }, [errors,formValues , handleOnChange, isDirty, isValid, register, validate]);
   return context;
 };
 

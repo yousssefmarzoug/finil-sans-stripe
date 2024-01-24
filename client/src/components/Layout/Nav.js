@@ -14,7 +14,7 @@ const Nav = () => {
   <div className="collapse navbar-collapse " id="navbarSupportedContent">
     <ul className="navbar-nav mr-auto menu">
       {links.map(link => {
-        return (<li className='mr-4' key={link} onClick={() => { }}><Link to={`/${link == "Home" ? "" : link }`}>{link}</Link></li>)
+        return (<li className='mr-4' key={link} onClick={() => { }}><Link to={`/${link === "Home" ? "" : link }`}>{link}</Link></li>)
         })
       }
     </ul>

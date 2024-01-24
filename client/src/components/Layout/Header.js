@@ -19,9 +19,9 @@ const UserLogin = ({ user }) => {
             <>
               <button className="btn btn-danger btn-sm" onClick={logout}>
                 logout
-              </button>{" "}
+              </button>
               <span>
-                {" "}
+                
                 <b>Hi, {user?.first}</b>
               </span>
             </>
@@ -59,7 +59,7 @@ const Header = () => {
           <ul className="navbar-nav mr-auto">
             <UserLogin user={user} />
             <li>
-              <a href="#" className="nav-link" disabled={true}>
+              <a href="https://www.google.com/" className="nav-link" disabled={true}>
                 {" "}
                 Deals{" "}
               </a>
@@ -72,14 +72,14 @@ const Header = () => {
           </ul>
           <ul className="navbar-nav">
             <li>
-              <a href="#" className="nav-link">
-                {" "}
-                <img src="images/icons/flags/US.png" height="16" /> Ship to{" "}
+              <a href="https://www.google.com/" className="nav-link">
+               
+                <img src="images/icons/flags/US.png" height="16"alt="hhh" /> Ship to{" "}
               </a>
             </li>
             <li className="nav-item dropdown">
               <a
-                href="#"
+                href="https://www.google.com/"
                 className="nav-link dropdown-toggle"
                 data-toggle="dropdown"
               >
@@ -88,30 +88,30 @@ const Header = () => {
               </a>
               <ul className="dropdown-menu small">
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="https://www.google.com/">
                     First item
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="https://www.google.com/">
                     Second item
                   </a>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <a className="dropdown-item" href="https://www.google.com/">
                     Third item{" "}
                   </a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="#" className="nav-link" disabled={true}>
+              <a href="https://www.google.com/" className="nav-link" disabled={true}>
                 {" "}
                 My Orders{" "}
               </a>
             </li>
             <li>
-              <a href="#" className="nav-link">
+              <a href="https://www.google.com/" className="nav-link">
                 {" "}
                 <i className="fas fa-bell"></i>
               </a>
