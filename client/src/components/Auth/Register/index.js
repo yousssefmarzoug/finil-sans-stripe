@@ -63,10 +63,10 @@ const Register = ({ history }) => {
   } = formValues["register"] ?? {};
   useEffect(() => {
     register(defaultValues);
-  }, []);
+  }, [register]);
   useEffect(() => {
     validate(formValues["register"] ?? {});
-  }, [formValues]);
+  }, [formValues,validate]);
 
   const handleOnSubmit = (e) => {
     e.preventDefault();

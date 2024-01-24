@@ -16,7 +16,7 @@ const options = ["Canada", "Russia", "United States", "India", "Afganistan"];
 const Checkout = () => {
   const { user } = useSelector((state) => state.user);
   const dispatch = useDispatch();
-  const { first, last, email, city, country, gender } = user ?? {};
+  const { first, last, email, city, country } = user ?? {};
   const {
     formValues,
     validate,

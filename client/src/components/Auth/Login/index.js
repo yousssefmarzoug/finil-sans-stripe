@@ -42,10 +42,10 @@ const Login = ({ history }) => {
   const { email, password } = formValues["login"] ?? {};
   useEffect(() => {
     register(defaultValues);
-  }, []);
+  }, [register]);
   useEffect(() => {
     validate(formValues["login"] ?? {});
-  }, [formValues]);
+  }, [formValues,validate]);
   const handleOnSubmit = (e) => {
     e.preventDefault();
     handleUserLogin(email, password).then((currentUser) => {

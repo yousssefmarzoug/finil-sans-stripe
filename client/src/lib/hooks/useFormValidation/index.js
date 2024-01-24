@@ -19,9 +19,9 @@ export const useFormValidation = ({ formName, defaultValues = {} }) => {
 
   const isValid = React.useMemo(
     () => Object.values(errors[formName] ?? {}).some((error) => error),
-    [formValues, handleOnChange]
+    [errors, formName]
   );
-  React.useEffect(() => register(), []);
+  React.useEffect(() => register(), [register]);
 
   const register = (values) => {
     const val = values ?? defaultValues;
@@ -49,7 +49,7 @@ export const useFormValidation = ({ formName, defaultValues = {} }) => {
       formValues,
       isValid: Boolean(!isValid && isDirty),
     };
-  }, [formValues]);
+  }, [errors, formName, handleOnChange, isDirty, isValid, register, validate]);
   return context;
 };
 

@@ -15,10 +15,10 @@ const Row = ({ id, name, price, quantity }) => {
       <td>
         <figure className="itemside">
           <div className="aside">
-            <img src={`images/items/${id}.jpg`} className="img-sm" />
+            <img src={`images/items/${id}.jpg`} alt="kkkkk" className="img-sm" />
           </div>
           <figcaption className="info">
-            <a href="#" className="title text-dark">
+            <a href="https://www.bing.com/search?pglt=43&q=google&cvid=1321df4208164c0d94345f1a1dcc0c0c&gs_lcrp=EgZjaHJvbWUqBggCEEUYOzIGCAAQRRg8MgYIARAAGEAyBggCEEUYOzIGCAMQABhAMgYIBBAAGEAyBggFEAAYQDIGCAYQLhhAMgYIBxBFGDsyBggIEC4YQNIBCDE3NDZqMGoxqAIAsAIA&FORM=ANNTA1&ucpdpc=UCPD&PC=U531" className="title text-dark">
               {name}
             </a>
           </figcaption>
@@ -45,8 +45,8 @@ const Row = ({ id, name, price, quantity }) => {
       <td className="text-right">
         <a
           data-original-title="Save to Wishlist"
-          title=""
-          href=""
+          title="tttttttt"
+          href="https://www.bing.com/search?pglt=43&q=google&cvid=1321df4208164c0d94345f1a1dcc0c0c&gs_lcrp=EgZjaHJvbWUqBggCEEUYOzIGCAAQRRg8MgYIARAAGEAyBggCEEUYOzIGCAMQABhAMgYIBBAAGEAyBggFEAAYQDIGCAYQLhhAMgYIBxBFGDsyBggIEC4YQNIBCDE3NDZqMGoxqAIAsAIA&FORM=ANNTA1&ucpdpc=UCPD&PC=U531"
           className="btn btn-light"
           data-toggle="tooltip"
           onClick={() => null}
@@ -55,11 +55,11 @@ const Row = ({ id, name, price, quantity }) => {
           <i className="fa fa-heart"></i>
         </a>
         <a
-          href=""
+          href="https://www.bing.com/search?pglt=43&q=google&cvid=1321df4208164c0d94345f1a1dcc0c0c&gs_lcrp=EgZjaHJvbWUqBggCEEUYOzIGCAAQRRg8MgYIARAAGEAyBggCEEUYOzIGCAMQABhAMgYIBBAAGEAyBggFEAAYQDIGCAYQLhhAMgYIBxBFGDsyBggIEC4YQNIBCDE3NDZqMGoxqAIAsAIA&FORM=ANNTA1&ucpdpc=UCPD&PC=U531"
           className="btn btn-light btn-round"
           onClick={removeFromCartAction}
         >
-          {" "}
+         
           Remove
         </a>
       </td>

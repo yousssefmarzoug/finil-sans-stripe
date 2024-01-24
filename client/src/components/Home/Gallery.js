@@ -22,7 +22,7 @@ const Gallery = () => {
   // fetch products
   useEffect(() => {
     dispatch(fetchProducts());
-  }, []);
+  }, [dispatch]);
 
   return (
     <>
