@@ -50,6 +50,9 @@
   "proxy": "https://marketplace23.onrender.com",
   "secure": false,
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/core": "^7.23.7",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@testing-library/dom": "^9.3.4",
+    "typescript": "^5.3.3"
   }
 }
