@@ -8,7 +8,7 @@ const Product = ({ id, name, price, category }) => {
   return (
     <div className="col-sm-4 col-6">
       <div className="card card-product-grid">
-        <a href="#" className="img-wrap">
+        <a href="" className="img-wrap">
           {" "}
           <img src={`images/items/${id}.jpg`} />{" "}
         </a>

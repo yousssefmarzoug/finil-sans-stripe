@@ -26,12 +26,12 @@ const Checkout = () => {
   } = useFormValidation({ formName: "checkout" });
   useEffect(() => {
     register(defaultValues);
-  }, []);
-  const { delivery, address } = formValues["checkout"] ?? {};
+  }, [register]);
+  const { delivery } = formValues["checkout"] ?? {};
 
   useEffect(() => {
     validate(formValues["checkout"] ?? {});
-  }, [formValues]);
+  }, [formValues, validate]);
   const handleOnChangeDelivery = (e, value) => {
     handleOnChange(e, value);
     dispatch(setDelivery(value));
